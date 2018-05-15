@@ -6,7 +6,7 @@ import numpy as np
 
 # 3 layer NNet (in,out) dimension of (3, 1)
 class NNetDouble:
-  def __init__(self, dimension=50):
+  def __init__(self, dimension=10):
     self.w1 = np.random.random((3, dimension))*2 - 1
     self.w2 = np.random.random((dimension,1))*2 - 1
 
