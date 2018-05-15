@@ -1,0 +1,19 @@
+{
+  "name": "ex-python",
+  "version": "1.0.0",
+  "description": "Python programming examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shnam7/ex-python"
+  },
+  "author": "",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/shnam7/ex-python/issues"
+  },
+  "homepage": "https://github.com/shnam7/ex-python#readme"
+}
