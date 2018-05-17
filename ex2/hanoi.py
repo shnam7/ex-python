@@ -28,14 +28,15 @@ class HanoiTower:
         """Move disks from self.peg[0] to self.peg[2] using self.peg[1] as helper peg"""
         self.print()
         self.move(len(self.pegs[0]), 0, 1, 2, silent)
+        self.print()
         return self.iter
     
     def print(self):
         print('n={:03d} {} {} {}'.format(self.iter, self.pegs[0], self.pegs[1], self.pegs[2]))
 
-hanoi = HanoiTower(10)
+hanoi = HanoiTower(5)
 tm1 = time.time()
-count = hanoi.run(True)
+count = hanoi.run(False)
 tm2 = time.time()
 
 print('Total iteration={} Elapsed time={}'.format(count, tm2-tm1))
