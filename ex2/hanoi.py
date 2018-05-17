@@ -9,7 +9,6 @@ class HanoiTower:
     
     def move(self, n, source, helper, target, silent=False):
         if n <= 0: return
-        self.iter += 1
 
         # move n-1 disks from source peg to target peg
         self.move(n-1, source, target, helper, silent)
@@ -19,6 +18,7 @@ class HanoiTower:
             disk = self.pegs[source].pop(0)
             # if not silent: self.print()
             self.pegs[target].insert(0, disk)
+            self.iter += 1
             if not silent: self.print()
         
         # move n-1 disks from helper to target
@@ -28,7 +28,7 @@ class HanoiTower:
         """Move disks from self.peg[0] to self.peg[2] using self.peg[1] as helper peg"""
         self.print()
         self.move(len(self.pegs[0]), 0, 1, 2, silent)
-        self.print()
+        if silent: self.print()     # print last status if silent switch is turned on
         return self.iter
     
     def print(self):
