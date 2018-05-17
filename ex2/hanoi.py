@@ -33,7 +33,7 @@ class HanoiTower:
     def print(self):
         print('n={:03d} {} {} {}'.format(self.iter, self.pegs[0], self.pegs[1], self.pegs[2]))
 
-hanoi = HanoiTower(30)
+hanoi = HanoiTower(10)
 tm1 = time.time()
 count = hanoi.run(True)
 tm2 = time.time()
