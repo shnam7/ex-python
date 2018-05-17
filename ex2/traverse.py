@@ -5,6 +5,7 @@ __author__ = 'shnam7'
 import os.path
 import glob
 
+print('Current working directory:{}'.format(os.getcwd()))
 
 def traverse(base=".", depth=0):
     base = os.path.normpath(base)
