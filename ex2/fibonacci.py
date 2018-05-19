@@ -1,4 +1,4 @@
-# Print Fibonacci Nb=umbers
+# Print Fibonacci Numbers
 import time
 
 def fibonacci(n):
