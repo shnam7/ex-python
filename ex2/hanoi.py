@@ -32,7 +32,7 @@ class HanoiTower:
         return self.iter
     
     def print(self):
-        print('n={:03d} {} {} {}'.format(self.iter, self.pegs[0], self.pegs[1], self.pegs[2]))
+        print('n={:03d} {!s:^15} {!s:^15} {!s:^15}'.format(self.iter, self.pegs[0], self.pegs[1], self.pegs[2]))
 
 hanoi = HanoiTower(5)
 tm1 = time.time()
@@ -40,3 +40,6 @@ count = hanoi.run(False)
 tm2 = time.time()
 
 print('Total iteration={} Elapsed time={}'.format(count, tm2-tm1))
+
+
+import fibonacci
