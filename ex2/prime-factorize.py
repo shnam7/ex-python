@@ -5,6 +5,7 @@
 #   Feb 26, 2017
 #
 
+
 def prime_factorize(num):
     """Prime number factorizer"""
 
@@ -13,7 +14,8 @@ def prime_factorize(num):
     numTarget = num     # remaining amount to break in search of prime numbers
 
     for i in range(2, num):
-        # print('num={0} i={1} num%i={2} numReach={3}'.format(num, i, num % i, numReach))
+        # print('num={0} i={1} num%i={2} numReach={3}'.format(
+        #     num, i, num % i, numReach))
         while num % i == 0:
             if primeCount > 0:
                 print('*', end='')
@@ -40,11 +42,12 @@ def run_factorizer():
             continue
 
         num = int(val)
-        if num == 0: break
+        if num == 0:
+            break
 
         prime_factorize(num)
         print()     # new line
 
 
-#--- main ---
+# --- main ---
 run_factorizer()

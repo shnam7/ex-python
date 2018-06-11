@@ -1,11 +1,8 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-__author__ = 'shnam7'
+# directory traversing with recurrsion
 
 import os.path
 import glob
 
-print('Current working directory:{}'.format(os.getcwd()))
 
 def traverse(base=".", depth=0):
     base = os.path.normpath(base)
@@ -14,4 +11,8 @@ def traverse(base=".", depth=0):
         for i in glob.iglob(base+'/*'):
             traverse(i, depth+1)
 
-traverse("..\\")
+
+if __name__ == "__main__":
+    print('Current working directory:', os.getcwd())
+    # traverse("..\\")
+    traverse(".")
