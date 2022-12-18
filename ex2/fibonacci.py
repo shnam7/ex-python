@@ -30,8 +30,7 @@ if __name__ == "__main__":
     tm2 = time.time()
     print('\nTotal time elapsed: {}'.format(tm2-tm1))
 
-    print('')
-
+    print()
     print("Fibonacci sequence(Fast):")
     tm1 = time.time()
     for count in range(maxCount):
